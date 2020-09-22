@@ -1,0 +1,52 @@
+On browsing the forum and the net, I see a lot of questions
+relating to data integrity in a VB form.
+
+It's an issue I come up against a lot myself - so here, I have attempted
+to address some of the issues raised and provide a possible solution.
+
+The form is designed around the DAO data reference.
+It is an attempt to make a bullet proof data form in that . . 
+
+If the user changes the value in a field and then tries to 
+move to another record, or add a new record, or close the form or whatever . . 
+then the form will pick up the changes and ask if the user wants to save.
+
+Its basically an attempt to make using DAO on forms safer for data integrity.
+
+If anyone has any ways to improve this method, please post.
+
+The find facility is a nice utility that I strung together from a mixture
+of code from others and some of my own.
+
+Clicking find will open a find form with a listview of all the records.
+Click any header and the search bok at the top of the form becomes relevant to
+the column that you clicked.
+Enter a few characters in it and the listview will try to match and select 
+the first record it finds that matches your text.
+
+Click on any column header to sort by that column no matter what the data type is.
+This puppy will sort strings, dates, numbers, urls, yes/no, memo, ..whatever.
+Click the columnheader again to sort in the reverse order.
+
+Keys.
+[Page Down] or [Arrow Down] = Move to next record
+[Page Up] or [Arrow Up] = Move to previous record
+
+[Ctrl & [Page Down] or [Arrow Down] = Move to Last record
+[Ctrl & [Page Up] or [Arrow Up] = Move to First record
+
+[End] = Move to Last record
+[Home] = Move to First record
+
+[Escape] = Close 
+
+[F2] = Find
+
+Hope its useful to some
+
+regards
+
+GT
+
+kieranstafford@utvinternet.com
+
